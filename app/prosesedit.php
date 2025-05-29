@@ -20,8 +20,8 @@ $result = mysqli_query($conn, $query);
 if ($result) {
     echo "<script>
             alert('Data berhasil diupdate!');
+            window.location.href = '../page/index.php'
         </script>";
-    header("Location: ../page/index.php");
     exit();
 } else {
     echo "Update gagal: " . mysqli_error($conn);

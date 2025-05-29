@@ -1,8 +1,5 @@
 <?php
-session_start();
-if(!isset($_SESSION["login"])) {
-    header("Location: loginregister.php");
-}
+include '../app/session.php';
 ?>
 
 <!DOCTYPE html>
