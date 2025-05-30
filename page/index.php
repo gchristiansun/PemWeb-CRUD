@@ -4,7 +4,7 @@ include '../app/session.php';
 include '../app/configpage.php';
 
 if (!isset($_SESSION["login"])) {
-    header("Location: loginregister.php");
+    header("Location: auth.php");
     exit;
 }
 

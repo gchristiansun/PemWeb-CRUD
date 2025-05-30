@@ -164,6 +164,10 @@ input {
 	gap: 0px
 }
 
+.remember-me span {
+	width: 100px
+}
+
 .overlay {
 	background: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);

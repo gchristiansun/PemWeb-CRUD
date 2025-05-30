@@ -4,7 +4,7 @@ require 'config.php';
 function registrasi($data) {
     global $conn;
 
-    $name = strtolower(stripslashes($data["name"]));
+    $name = ucwords(strtolower(stripslashes($data["name"])));
     $password = mysqli_real_escape_string($conn, $data["password"]);
     $konfirmasipassword = mysqli_real_escape_string($conn, $data["konfirmasipassword"]);
     $email = $data["email"];
